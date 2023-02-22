@@ -1,105 +1,36 @@
 // https://www.npmjs.com/package/express-async-handler
 const asyncHandler = require("express-async-handler");
 
+const Car = require("../models/carModel");
+
 // @desc    Get cars
 // @route   GET /api/cars
 // @access  Public
 const getCars = asyncHandler(async (req, res) => {
-  res.status(200).json([
-    {
-      id: "3",
-      make: "Ford",
-      model: "Mustang",
-      package: "SE",
-      category: "Sedan",
-      year: "2022",
-      color: "Red",
-      price: "25000",
-    },
-    {
-      id: "3",
-      make: "Ford",
-      model: "Mustang",
-      package: "SE",
-      category: "Sedan",
-      year: "2022",
-      color: "Red",
-      price: "25000",
-    },
-    {
-      id: "3",
-      make: "Ford",
-      model: "Mustang",
-      package: "SE",
-      category: "Sedan",
-      year: "2022",
-      color: "Red",
-      price: "25000",
-    },
-    {
-      id: "3",
-      make: "Ford",
-      model: "Mustang",
-      package: "SE",
-      category: "Sedan",
-      year: "2022",
-      color: "Red",
-      price: "25000",
-    },
-  ]);
+  const cars = await Car.find();
+  res.status(200).json(cars);
 });
 
 // @desc    Add car
 // @route   PUT /api/cars
 // @access  Public
 const addCar = asyncHandler(async (req, res) => {
-  console.log(req.body);
-  if (!req.body.text) {
+  const { make, model, package, category, year, color, price } = req.body;
+  if (!make || !model || !package || !category || !year || !color || !price) {
     res.status(400);
-    throw new error("Please add a text field");
+    throw new error("Please add all fields");
   }
-  res.status(201).json([
-    {
-      id: "3",
-      make: "Ford",
-      model: "Mustang",
-      package: "SE",
-      category: "Sedan",
-      year: "2022",
-      color: "Red",
-      price: "25000",
-    },
-    {
-      id: "3",
-      make: "Ford",
-      model: "Mustang",
-      package: "SE",
-      category: "Sedan",
-      year: "2022",
-      color: "Red",
-      price: "25000",
-    },
-    {
-      id: "3",
-      make: "Ford",
-      model: "Mustang",
-      package: "SE",
-      category: "Sedan",
-      year: "2022",
-      color: "Red",
-      price: "25000",
-    },
-    {
-      id: "3",
-      make: "Ford",
-      model: "Mustang",
-      package: "SE",
-      category: "Sedan",
-      year: "2022",
-      color: "Red",
-      price: "25000",
-    },
-  ]);
+
+  const car = await Car.create({
+    make: make,
+    model: model,
+    package: package,
+    category: category,
+    year: year,
+    color: color,
+    price: price,
+  });
+  res.status(201).json(car);
 });
 
 module.exports = { getCars, addCar };
