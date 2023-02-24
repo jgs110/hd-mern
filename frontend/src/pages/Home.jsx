@@ -26,9 +26,7 @@ const Home = () => {
   const fetchData = async () => {
     setLoading(true);
     try {
-      const { data: response } = await axios.get(
-        "http://localhost:8000/api/cars"
-      );
+      const { data: response } = await axios.get("http://localhost:8000/cars");
       setCars(response);
     } catch (error) {
       console.error(error.message);

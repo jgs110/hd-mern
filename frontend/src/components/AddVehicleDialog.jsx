@@ -73,7 +73,7 @@ const AddVehicleDialog = ({ open, setOpen, fetchData }) => {
     };
     console.log(data);
     try {
-      const response = await axios.post("http://localhost:8000/api/cars", data);
+      const response = await axios.post("http://localhost:8000/cars", data);
       if (response) {
         setMake("");
         setModel("");

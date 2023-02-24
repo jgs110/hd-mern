@@ -14,7 +14,7 @@ app.use(cors({ origin: "*" }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-app.use("/api/cars", require("./routes/carRoutes"));
+app.use("/cars", require("./routes/carRoutes"));
 
 app.use(errorHandler);
 
