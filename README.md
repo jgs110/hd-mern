@@ -10,7 +10,7 @@ https://www.notion.so/Product-Spec-Car-Management-Web-App-cb2cde86cf034830ab4575
 - Retrieve a car by id using an API endpoint
 
 **Stack**
-This application was built using the MERN stack and MaterialUI. Tested using React Testing Library. 
+This application was built using the Vite, the MERN stack, and MaterialUI. Unit tests were created using React Testing Library and Jest. 
 
 ENV Variables:
 NODE_ENV = development
