@@ -6,12 +6,15 @@
   "scripts": {
     "start": "node api/server.js",
     "server": "nodemon api/server.js",
+    "client": "npm run dev --prefix frontend",
+    "dev": "concurrently 'vite' 'nodemon api/server.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jason Saldana",
   "license": "MIT",
   "dependencies": {
     "colors": "^1.4.0",
+    "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-async-handler": "^1.2.0",

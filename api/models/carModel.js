@@ -8,7 +8,8 @@ const carSchema = mongoose.Schema(
     category: { type: String, required: [true, "Please add a category"] },
     year: { type: String, required: [true, "Please add a year"] },
     color: { type: String, required: [true, "Please add a color"] },
-    price: { type: String, required: [true, "Please add a price"] },
+    miles: { type: Number, required: [true, "Please add miles"] },
+    price: { type: Number, required: [true, "Please add a price"] },
   },
   {
     timestamps: true,
