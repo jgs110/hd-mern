@@ -1,5 +1,5 @@
 **Introduction:**
-The Car Management Web Application is a web-based application that allows users to view and add cars to a list. This application is built using MongoDB, React, Express, and Node.js technologies. For a full product specification please check this link: 
+The Car Management Web Application is a web-based application that allows users to view and add cars to a list. This application is built using MongoDB, React, Express, and Node.js technologies. For a full product specification please check this link:
 https://www.notion.so/Product-Spec-Car-Management-Web-App-cb2cde86cf034830ab4575f91023bc8e
 
 **Features:**
@@ -10,9 +10,9 @@ https://www.notion.so/Product-Spec-Car-Management-Web-App-cb2cde86cf034830ab4575
 - Retrieve a car by id using an API endpoint
 
 **Stack**
-This application was built using the Vite, the MERN stack, and MaterialUI. Unit tests were created using React Testing Library and Jest. 
+This application was built using the Vite, the MERN stack, and MaterialUI. Unit tests were created using React Testing Library and Jest.
 
-ENV Variables:
+**ENV Variables**
 NODE_ENV = development
 PORT = 8000
-MONGO_URI = ***************
+MONGO_URI = ******\*\*\*******
