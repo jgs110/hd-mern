@@ -7,7 +7,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import CircularProgress from "@mui/material/CircularProgress";
 import Button from "@mui/material/Button";
-import logo from "../../public/logo.svg";
+import logo from "../assets/logo.svg";
 import DetailsDialog from "../components/DetailsDialog";
 import AddVehicleDialog from "../components/AddVehicleDialog";
 import axios from "axios";
