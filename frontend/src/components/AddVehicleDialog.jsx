@@ -84,8 +84,8 @@ const AddVehicleDialog = ({ open, setOpen, fetchData }) => {
         setMiles(0);
         setPrice(0);
         setOpen(false);
+        fetchData();
       }
-      fetchData();
     } catch (err) {
       console.log(err);
     }
