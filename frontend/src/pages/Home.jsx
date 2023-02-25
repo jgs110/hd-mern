@@ -7,7 +7,6 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import CircularProgress from "@mui/material/CircularProgress";
 import Button from "@mui/material/Button";
-import logo from "../assets/logo.svg";
 import DetailsDialog from "../components/DetailsDialog";
 import AddVehicleDialog from "../components/AddVehicleDialog";
 import axios from "axios";
@@ -74,7 +73,11 @@ const Home = () => {
               return (
                 <Grid item key={id} xs={12} sm={6} md={3}>
                   <Card sx={{ maxWidth: 380 }}>
-                    <CardMedia sx={{ height: 220 }} image={logo} title="logo" />
+                    <CardMedia
+                      sx={{ height: 240 }}
+                      image="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/camaro-new-1632838232.jpg?crop=0.876xw:0.779xh;0.0725xw,0.111xh&resize=980:*"
+                      title="logo"
+                    />
                     <CardContent>
                       <Typography gutterBottom variant="h5" component="div">
                         {car.year} {car.make} {car.model}

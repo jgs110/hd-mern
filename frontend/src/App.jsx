@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import * as Sentry from "@sentry/react";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 
@@ -17,4 +18,4 @@ function App() {
   );
 }
 
-export default App;
+export default Sentry.withProfiler(App);

@@ -13,6 +13,8 @@
   "author": "Jason Saldana",
   "license": "MIT",
   "dependencies": {
+    "@sentry/react": "^7.38.0",
+    "@sentry/tracing": "^7.38.0",
     "colors": "^1.4.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
