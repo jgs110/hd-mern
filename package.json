@@ -7,8 +7,7 @@
     "start": "node api/server.js",
     "server": "nodemon api/server.js",
     "client": "npm run dev --prefix frontend",
-    "dev": "concurrently 'vite' 'nodemon api/server.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "concurrently 'vite' 'nodemon api/server.js'"
   },
   "author": "Jason Saldana",
   "license": "MIT",
@@ -20,8 +19,7 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-async-handler": "^1.2.0",
-    "mongoose": "^6.9.2",
-    "web-vitals": "^3.1.1"
+    "mongoose": "^6.9.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"

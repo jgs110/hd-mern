@@ -44,7 +44,7 @@ const Home = () => {
   };
 
   return (
-    <div>
+    <div data-testid="home">
       <Grid container justifyContent="center">
         <Grid container justifyContent="center" style={{ margin: "2em" }}>
           <Grid item>
