@@ -9,13 +9,16 @@ https://www.notion.so/Product-Spec-Car-Management-Web-App-cb2cde86cf034830ab4575
 - Add a new car to the list
 - Retrieve a car by id using an API endpoint
 
-**Stack**
-This application was built using the Vite, the MERN stack, and MaterialUI. Unit tests were created using React Testing Library and Vitest.
+**Stack:**
+This application was built using the Vite, the MERN stack, and MaterialUI.
 
-**Logging and Performance Tracking**
+**Unit Testing:**
+Frontend unit tests are created using React Testing Library and Vitest.
+
+**Logging and Performance Tracking:**
 This application's Core Web Vitals are being tracked using Sentry.io Developer Plan. The metrics making up Core Web Vitals include: Largest Contentful Paint (LCP), First Input Delay(FID), First Contentful Paint (FCP), and Cumulative Layout Shift (CLS). This Developer Plan also provides limited error tracking information.
 
-**ENV Variables**
+**ENV Variables:**
 NODE_ENV = development
 PORT = 8000
 MONGO_URI = **\*\***\*\*\***\*\***
