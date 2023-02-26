@@ -52,6 +52,7 @@ const Home = () => {
               size="medium"
               variant="contained"
               onClick={handleAddVehicle}
+              style={{ backgroundColor: "#EE7125", color: "black" }}
             >
               Add Vehicle
             </Button>
@@ -76,7 +77,7 @@ const Home = () => {
                     <CardMedia
                       sx={{ height: 240 }}
                       image="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/camaro-new-1632838232.jpg?crop=0.876xw:0.779xh;0.0725xw,0.111xh&resize=980:*"
-                      title="logo"
+                      title="vehicle"
                     />
                     <CardContent>
                       <Typography gutterBottom variant="h5" component="div">
